@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: orange;
+    color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51,51,51,0,9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a{
+    display: block;
+    color: black;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    font-weight: bold;
+    
+}
+
+.menu a:hover{
+    background: gray
+}
+
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#banner{
+    margin-top: 50px;
+}
+
+#banner img{
+    width: 100%;
+    height: 100%;
+}
+
+#nuestrasBurgers{
+    color: black;
+    text-align: center;
+}
+
+#nuestrasBurgers p{
+    color: orange;
+    font-size: large;
+    font-weight: bold;
+}
+
+#imagenBurger{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#imagenBurger img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.fondo{
+    background-color: orange;
+    display: flex;
+    padding: 50px;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.fondo img{
+    width: 60px;
+}
+
+@media (min-width:1024px) {
+    .contenedor{
+        width: 1000px;
+    }
+    
+}
+
+@media (min-width:480px) {
+    #nuestrasBurgers h2{
+        font-size: 40px;
+    }
+   
+}
+
+@media (min-width:768) {
+    #nuestrasBurgers {
+        height: 300px;
+        overflow: hidden;
+    }
+
+}
+
+
+
+@media (min-width:1024px) {
+    .menu{
+        display: flex;
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        
+        
+    }
+
+    .menu a{
+        border: none;
+    }
+    header label{
+        display: none;
+
+    }
+}
+
+.menuContainer {
+
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 400px 400px 400px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    
+    
+    
+
+}
+.menuItem {
+    border: 5px solid #ff6720
+}
+
+.menuContainer img{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tituloBurger{
+    margin: 0px;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    color: #ff6720;
+    font-size: xx-large;
+}
+
+
+@media (max-width: 480px){
+    .menuContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 300px;
+        margin: 20px;
+        padding: 0px;
+       
+        
+        
+        
+    }
+    .tituloBurger{
+        font-size: x-large;
+        justify-content: center;
+        margin: 40px;
+        
+    }
+   
+}
+
+@media (max-width: 480px){
+    .menuItem{
+        border: none;
+    }
+}
+
+.historia {
+
+    
+    display: flex;
+    padding: 65px;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+.historia p{
+    padding: 70px;
+    margin: 40px;
+    font-weight: bold;
+    float: right;
+    color: red
+}
+
+.titulohistoria{
+    margin: 40px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: red;
+}
+
+.historia img{
+    display: flex;
+    margin: 50px;
+}
+
+.containerForm{
+   
+    display: flex;
+    margin: 100px;
+    padding: 20px;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+}
+
+.mb-3{
+    font-size: small;
+    margin: 50px;
+}
