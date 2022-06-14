@@ -329,7 +329,8 @@ section {
 }
 
 .color {
-  background: orange;
-  color: white;
+  color: red;
+  font-size: large;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

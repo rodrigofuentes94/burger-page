@@ -263,13 +263,20 @@
 
   $colores: (
     
-    principal: orange,
+    principal: red
+
+
     
     
   );
 
   .color{
-    background: map-get($colores, principal, );
-    color: white
+    color: map-get($colores, principal, );
+    font-size: large;
+    font-weight: bold;
+    
+    
+    
+    
 
   }
