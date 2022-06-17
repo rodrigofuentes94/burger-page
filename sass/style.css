@@ -238,15 +238,12 @@ section {
 }
 
 .textohistoria {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: x-large;
-  padding: 30px;
-  margin: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+  padding: 0px;
+  margin: 0px;
   font-weight: bold;
-  float: right;
-  color: red;
+  color: #ff6720;
 }
 
 .titulohistoria {
@@ -263,6 +260,7 @@ section {
 }
 
 .historia img {
+  width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,8 +274,8 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 100px;
-  padding: 20px;
+  margin: 60px;
+  padding: 70px;
   gap: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -288,6 +286,14 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.formtitulo{
+  display: flex;
+  justify-content: center;
+  padding: 55px;
+  margin: 30px;
+  padding:;
 }
 
 .mb-3 {
@@ -333,4 +339,7 @@ section {
   font-size: large;
   font-weight: bold;
 }
-/*# sourceMappingURL=style.css.map */
+
+#contact_form{
+  margin: 70px;
+}
