@@ -247,8 +247,8 @@ section {
 }
 
 .titulohistoria {
-  margin: 40px;
-  padding: 40px;
+  margin: 50px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,7 +267,10 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0px;
+  margin: 50px;
+  padding: 0px;
+  
+  
 }
 
 .containerForm {
